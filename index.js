@@ -30,9 +30,7 @@ module.exports = (htmlText, wndw) => {
     const convertHtml = htmlText => {
         const parser = new virtualDOM.DOMParser();
         const mdToHtml = marked(htmlText);
-	console.log("mdToHtml", mdToHtml)
         const parsedHtml = parser.parseFromString(mdToHtml, "text/html");
-	console.log("parsedHtml", parsedHtml)
         const docDef = [];
 
         [].forEach.call(parsedHtml.childNodes, child => {
