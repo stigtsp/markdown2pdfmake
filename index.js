@@ -1,6 +1,6 @@
 const marked = require("marked");
-const linkedom = require('linkedom');
-function JSDOM(html) { return linkedom.parseHTML(html); }
+var { parseHTML } = require('linkedom');
+function JSDOM(html) { return parseHTML(html);}
 
 module.exports = (htmlText, wndw) => {
     const { window } = new JSDOM("");
