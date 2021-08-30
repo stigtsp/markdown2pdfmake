@@ -35,7 +35,7 @@ module.exports = (htmlText, wndw) => {
 	console.log("parsedHtml", parsedHtml)
         const docDef = [];
 
-        [].forEach.call(parsedHtml.body.childNodes, child => {
+        [].forEach.call(parsedHtml.childNodes, child => {
         let ret = parseElement(child);
         if (ret) {
             if (Array.isArray(ret) && ret.length === 1) {
