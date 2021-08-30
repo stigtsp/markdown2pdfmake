@@ -32,6 +32,7 @@
   ],
   "homepage": "https://github.com/sebasdb2111/markdown2pdfmake",
   "dependencies": {
+    "canvas": "^2.8.0",
     "codemirror": "*",
     "codemirror-spell-checker": "*",
     "linkedom": "https://github.com/stigtsp/linkedom.git",
