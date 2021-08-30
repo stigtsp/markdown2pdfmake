@@ -4,7 +4,8 @@ function JSDOM(html) { return linkedom.parseHTML(html);}
 
 module.exports = (htmlText, wndw) => {
     const { window } = new JSDOM("");
-    const virtualDOM = wndw ? wndw : window;
+	//const virtualDOM = wndw ? wndw : window;
+    const virtualDOM = window;
     const defaultStyles = {
         b: { bold: true },
         strong: { bold: true },
