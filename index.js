@@ -32,7 +32,7 @@ module.exports = (htmlText, wndw) => {
         const mdToHtml = marked(htmlText);
 	console.log("mdToHtml", mdToHtml)
         const parsedHtml = parser.parseFromString(mdToHtml, "text/html");
-	console.log("parsedHtml", parsedHTML)
+	console.log("parsedHtml", parsedHtml)
         const docDef = [];
 
         [].forEach.call(parsedHtml.body.childNodes, child => {
